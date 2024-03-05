@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# bastion-connect.sh
+if command -v bastion-connect.sh &>/dev/null; then
+    complete -W "$(bastion-connect.sh --list-profiles)" bastion-connect.sh
+fi
+
+# dbmate-das.sh
+if command -v dbmate-das.sh &>/dev/null; then
+    complete -W "$(dbmate-das.sh --list-targets)" dbmate-das.sh
+fi
+
